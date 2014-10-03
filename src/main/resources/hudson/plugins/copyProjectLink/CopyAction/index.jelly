@@ -30,7 +30,7 @@ THE SOFTWARE.
   <l:layout norefresh="true" permission="${permission}" title="${%new(it.item.pronoun)}">
     <st:include page="sidepanel.jelly" />
     <l:main-panel>
-      <j:set var="parentUrl" value="${rootURL}${h.getRelativeLinkTo(it.item.parent)}"/>
+      <j:set var="parentUrl" value="../../../"/>
       <f:form method="post" action="${parentUrl}/createItem">
       	<f:block>
     	<f:entry title="${%Job name}">
